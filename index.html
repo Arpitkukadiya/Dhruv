@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Simple Page</title>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+
     <style>
         body {
-            text-align: center;
-            margin-top: 100px;
-            font-family: Arial;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f4f7f8;
+            font-family: Arial, sans-serif;
         }
 
-        img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover; /* keeps image square */
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .square-image {
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            margin: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .square-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* keeps image perfectly square */
         }
     </style>
 </head>
 
 <body>
 
-    <h1>dhruv patel</h1>
+    <div class="container">
+        <h1>Dhruv Patel-jatpariya</h1>
 
-    <img src="Dhruv.png" alt="Dhruv Photo">
+        <div class="square-image">
+            <img src="Dhruv.PNG" alt="Profile Photo">
+        </div>
+    </div>
 
 </body>
 </html>
