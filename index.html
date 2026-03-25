@@ -2,48 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile Page</title>
+    <title>Ras-Puri Invitation</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
             padding: 0;
-            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1604908177522-4295a6a6f5d2');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #f4f7f8;
-            font-family: Arial, sans-serif;
+            color: white;
         }
 
         .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
             text-align: center;
-            padding: 20px;
+            width: 350px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }
 
         h1 {
-            margin-bottom: 25px;
-            color: #222;
             font-size: 28px;
+            margin-bottom: 10px;
         }
 
-        .square-image {
-            width: 300px;
-            height: 300px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .food-image {
+            width: 250px;
+            height: 250px;
+            margin: auto;
             border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            overflow: hidden;
+            border: 3px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
 
-        .square-image img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            border-radius: 10px;
+        .food-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .details {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 13px;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -51,11 +98,31 @@
 <body>
 
     <div class="container">
-        <h1>Dhruv Patel</h1>
 
-        <div class="square-image">
-            <img src="Dhruv.PNG" alt="Dhruv Photo">
+        <h1>🍽️ Ras-Puri Invitation</h1>
+        <div class="subtitle">🌞 Gujarati Authentic Summer Feast 🌞</div>
+
+        <div class="food-image">
+            <img src="https://images.unsplash.com/photo-1604908177522-4295a6a6f5d2" alt="Ras Puri">
         </div>
+
+        <div class="details">
+            <p>🙏 You are warmly invited to enjoy</p>
+            <p class="highlight">🥭 Aamras & Puri Special 🍛</p>
+
+            <p>📅 Date: <span class="highlight">Sunday</span></p>
+            <p>⏰ Time: <span class="highlight">12:30 PM</span></p>
+            <p>📍 Venue: <span class="highlight">Dhruv Patel's Home</span></p>
+
+            <p>💛 Come & enjoy delicious food, fun & family vibes!</p>
+        </div>
+
+        <button class="btn">🎉 Join Us</button>
+
+        <div class="footer">
+            Made with ❤️ | Gujarati Tradition
+        </div>
+
     </div>
 
 </body>
